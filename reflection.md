@@ -38,11 +38,13 @@ I used Copilot and Claude. One correct suggestion was that Copilot told me that 
 I decided if a bug was fixed by testing it in streamlit and using pytest. One test I ran using pytest was checking if the higher or lower message outputs were consistent and correct. Another test I ran manually was inputting numbers and seeing what the output message was. Originally, they were reversed which helped me to identify the error. Copilot helped me to design pytests by generating me one. 
 
 ---
-
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Reruns: Every time you interact with a Streamlit app like click a button, type in a box, or move a slider, Streamlit reruns your entire Python script from top to bottom. It's not like a normal app where only one function runs when you click a button. The whole file re-executes every single time.
+
+Session state: Because the script reruns from scratch every time, any regular variables you created get wiped. Session state is Streamlit's way of letting you save values that survive across reruns. 
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -51,3 +53,7 @@ I decided if a bug was fixed by testing it in streamlit and using pytest. One te
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One habit I want to is finding errors myself and then asking Copilot to help me fix them rather than only using AI to find errors as well. As a result, one thing I plan to do differently is to depend less on AI to find errors and debug. While AI is faster and easier, I also need to practice identifying errors in the code itself. 
+
+This project changed the way I think about AI generated code because it made me realize that its not that great at fixing code just yet unless you copy and paste everything in. It requires a lot more prompt engineering and giving it context. 
