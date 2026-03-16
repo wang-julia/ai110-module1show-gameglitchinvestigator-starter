@@ -80,6 +80,8 @@ if new_game:
     st.session_state.attempts = 1 #FIX: reset attempts when starting a new game
     st.session_state.secret = random.randint(low, high) #FIX: generate a new secret when starting a new game within the appropriate range (used Claude)
     st.session_state.status = "playing"  # FIX: reset status using Copilot
+    st.session_state.score = 0  # FIX: score wasn't being reset on new game
+    st.session_state.history = []  # FIX: history wasn't being reset on new game
     st.success("New game started.")
     st.rerun() 
 
